@@ -28,25 +28,11 @@ function Directory() {
     <>
       <Helmet>
         <title>Directory - AI Sure Tech Hub</title>
-
-  const filteredSites = sitesData.filter(site => {
-    const matchesSearch = 
-      site.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      site.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      site.tagline.toLowerCase().includes(searchTerm.toLowerCase());
-    
-    const matchesCategory = selectedCategory === 'all' || site.category === selectedCategory;
-    
-    return matchesSearch && matchesCategory;
-  });
-
-  const groupedSites = {};
-  Object.keys(categories).forEach(cat => {
-    groupedSites[cat] = filteredSites.filter(site => site.category === cat);
-  });
-
-  return (
-    <div className="directory">
+        <meta name="description" content="Browse our complete directory of 19+ AI-powered websites. Filter by category: AI Education, Finance & Crypto, Creative Tools, and Entertainment. Find the perfect AI solution." />
+        <link rel="canonical" href="https://hub.aisuretech.com/directory" />
+      </Helmet>
+      
+      <div className="directory">
       <div className="directory-header">
         <h1>Site Directory</h1>
         <p>Explore all {sitesData.length} AI-powered sites in the AISureTech ecosystem</p>
