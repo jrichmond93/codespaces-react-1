@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { sitesData } from '../data/sites';
 import SiteCard from '../components/SiteCard';
@@ -7,7 +8,14 @@ function Home() {
   const featuredSites = sitesData.filter(site => site.featured);
 
   return (
-    <div className="home">
+    <>
+      <Helmet>
+        <title>AI Sure Network Hub - Explore AISureTech's AI-Powered Ecosystem</title>
+        <meta name="description" content="Discover 19+ innovative AI-powered websites from AISureTech. Access tools for finance, education, creativity, and entertainment. From AI stock analysis to fun games - all in one hub." />
+        <link rel="canonical" href="https://hub.aisuretech.com/" />
+      </Helmet>
+      
+      <div className="home">
       <section className="hero">
         <h1 className="hero-title">
           Explore the AISureTech Ecosystem
@@ -36,6 +44,7 @@ function Home() {
         <Link to="/directory" className="cta-button">View Full Directory</Link>
       </section>
     </div>
+    </>
   );
 }
 

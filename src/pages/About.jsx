@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './About.css';
 
 function About() {
   return (
-    <div className="about">
+    <>
+      <Helmet>
+        <title>About - AI Sure Network Hub | AISureTech's AI Ecosystem</title>
+        <meta name="description" content="Learn about AI Sure Network Hub, AISureTech's centralized platform showcasing innovative AI-powered websites for finance, education, creativity, and entertainment." />
+        <link rel="canonical" href="https://hub.aisuretech.com/about" />
+      </Helmet>
+      
+      <div className="about">
       <div className="about-container">
         <h1>About AI Sure Network Hub</h1>
         
@@ -62,6 +70,7 @@ function About() {
         </section>
       </div>
     </div>
+    </>
   );
 }
 
