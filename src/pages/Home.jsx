@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>AI Sure Network Hub - Explore AISureTech's AI-Powered Ecosystem</title>
+        <title>AI Sure Tech Hub</title>
         <meta name="description" content="Discover 19+ innovative AI-powered websites from AISureTech. Access tools for finance, education, creativity, and entertainment. From AI stock analysis to fun games - all in one hub." />
         <link rel="canonical" href="https://hub.aisuretech.com/" />
       </Helmet>

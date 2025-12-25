@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About - AI Sure Network Hub | AISureTech's AI Ecosystem</title>
+        <title>About - AI Sure Tech Hub</title>
         <meta name="description" content="Learn about AI Sure Network Hub, AISureTech's centralized platform showcasing innovative AI-powered websites for finance, education, creativity, and entertainment." />
         <link rel="canonical" href="https://hub.aisuretech.com/about" />
       </Helmet>

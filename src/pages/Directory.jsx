@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { sitesData, categories } from '../data/sites';
 import SiteCard from '../components/SiteCard';
 import './Directory.css';
@@ -6,6 +7,27 @@ import './Directory.css';
 function Directory() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const filteredSites = sitesData.filter(site => {
+    const matchesSearch = 
+      site.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      site.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      site.tagline.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    const matchesCategory = selectedCategory === 'all' || site.category === selectedCategory;
+    
+    return matchesSearch && matchesCategory;
+  });
+
+  const groupedSites = {};
+  Object.keys(categories).forEach(cat => {
+    groupedSites[cat] = filteredSites.filter(site => site.category === cat);
+  });
+
+  return (
+    <>
+      <Helmet>
+        <title>Directory - AI Sure Tech Hub</title>
 
   const filteredSites = sitesData.filter(site => {
     const matchesSearch = 
