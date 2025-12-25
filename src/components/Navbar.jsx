@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/codespaces-react-1/AI Sure Tech logo.png" alt="AI Sure Tech" className="logo-image" />
+          <img src="/AI Sure Tech logo.png" alt="AI Sure Tech" className="logo-image" />
           <span>AI Sure Network Hub</span>
         </Link>
         <ul className="nav-menu">

@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/codespaces-react-1">
+    <Router basename="/">
       <div className="App">
         <Navbar />
         <Routes>
