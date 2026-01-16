@@ -111,3 +111,4 @@ Guess the feather!
     https://opposingpoint.com/  
     Escape the Echo Chamber and Challenge Your Ideas with AI Precision.  
     Our AI modes challenge your thinking, expose logical fallacies, and prepare you for real-world opposition. Whether you're testing a business idea, refining an argument, or preparing for a debate — we'll show you what you're missing.  
+

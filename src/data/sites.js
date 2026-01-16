@@ -169,6 +169,24 @@ export const sitesData = [
     description: "Our AI modes challenge your thinking, expose logical fallacies, and prepare you for real-world opposition. Whether you're testing a business idea, refining an argument, or preparing for a debate — we'll show you what you're missing.",
     category: "creative",
     featured: false
+  },
+  {
+    id: 20,
+    name: "AI Mortgage Calc",
+    url: "https://aimortgagecalc.com/",
+    tagline: "Calculate your mortgage payments with precision",
+    description: "Get detailed amortization schedules, payment breakdowns, and AI-powered explanations tailored to your situation. New to mortgages? Explore our Learning Center for comprehensive guides on mortgage basics, affordability, rates, and payment strategies.",
+    category: "finance",
+    featured: false
+  },
+  {
+    id: 21,
+    name: "Policy Clown",
+    url: "https://www.policyclown.com/",
+    tagline: "Daily satirical political predictions powered by AI",
+    description: "We combine the latest breaking news headlines with documented political stances to create absurd, exaggerated policy forecasts for entertainment.",
+    category: "entertainment",
+    featured: false
   }
 ];
 
