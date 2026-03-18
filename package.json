@@ -21,8 +21,8 @@
     "postcss": "^8.4.31"
   },
   "scripts": {
-    "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
-    "build": "vite build",
+    "start": "node init && BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest",
     "predeploy": "npm run build",
